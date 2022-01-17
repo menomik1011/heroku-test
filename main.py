@@ -20,7 +20,7 @@ def post():
     id = request.form['id']
     pw = request.form['pw']
     # msg = "%s 님 안녕! " %value
-    return f"<p>{id}</p><br/><p>{pw}</p>"
+    return f"<p>id: {id}</p><p>pw: {pw}</p>"
 
 
 if __name__ == '__main__':
