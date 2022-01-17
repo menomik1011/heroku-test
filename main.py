@@ -17,9 +17,10 @@ def user(user_name, user_id):
 
 @app.route('/api',methods=['POST'])
 def post():
-    value = request.form['input']
-    msg = "%s 님 안녕! " %value
-    return msg
+    id = request.form['id']
+    pw = request.form['pw']
+    # msg = "%s 님 안녕! " %value
+    return f"<p>{id}</p><br/><p>{pw}</p>"
 
 
 if __name__ == '__main__':
